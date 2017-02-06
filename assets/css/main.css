@@ -1,0 +1,132 @@
+body {
+    background: #fff;
+    color: #000;
+}
+#social-navbar {
+    color : #000;
+}
+
+#heading {
+    padding: 0 15px;
+    font-family: 'Montserrat';
+    font-size: 5em;
+    font-weight: normal;
+}
+
+#intro {
+    padding: 25px 15px;
+    font-family: 'Open Sans';
+    font-size: 1.09em;
+    font-weight: normal;
+    line-height: 1.5;
+}
+
+#link-blink {
+    color: #000;
+    font-family: 'Open Sans';
+    font-size: 2.29em;
+    font-style: italic;
+    font-weight: bold;
+    line-height: 0;
+    animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+    50% { opacity:0; }
+}
+
+/* slider animation */
+#slider {
+  height: 460px;
+}
+.slide1,.slide2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background: url("../img/27thBox%20(3%20of%208).jpg")no-repeat center;
+  background-size: cover;
+  animation:fade 10s infinite;
+-webkit-animation:fade 10s infinite;
+
+} 
+.slide2 {
+  background: url("../img/27thBox%20(8%20of%208).jpg")no-repeat center;
+  background-size: cover;
+  animation:fade2 10s infinite;
+-webkit-animation:fade2 10s infinite;
+}
+
+@keyframes fade
+{
+  0%   {opacity:1}
+  50% { opacity: 0}
+  100% { opacity: 1}
+}
+
+@keyframes fade2
+{
+  0%   {opacity:0}
+  50% { opacity: 1}
+  100% { opacity: 0}
+}
+
+/* end animation */
+
+#modal-btn {
+    color: #000;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 1.50em;
+    font-weight: lighter;
+}
+
+/* footer */
+
+#footer {
+    margin: 35px auto;
+    padding: 5px;
+}
+
+#copy-box {
+    padding: 5px 20px;
+    text-align: right;
+}
+
+#comp-name {
+    font-family: 'Montserrat';
+    font-size: 1.28em;
+    line-height: 0;
+}
+
+#copy-text {
+    color: #666;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-size: 0.78em;
+}
+
+#policies {
+    padding : 16px 10px;
+    border-left: 3px solid #aaa;
+}
+
+.foot-text {
+    font-family: 'Open Sans';
+    color : #666;
+    line-height: .5;
+}
+
+
+.foot-link {
+    color: #666;
+    font-size: 0.8em;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+#contact {
+    padding-top: 30px;
+    text-align: left;
+}
