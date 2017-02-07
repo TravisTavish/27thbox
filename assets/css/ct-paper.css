@@ -840,7 +840,7 @@ body > .navbar-collapse.has-image::after{top:0;left:0;height:100%;width:100%;pos
 @keyframes fadeIn{0%{opacity:0;}
 100%{opacity:1;}
 }
-.navbar-nav{margin:1px -15px;}
+.navbar-nav{margin:1px auto;display:inline-flex;}
 .navbar-nav .open .dropdown-menu > li > a{padding:15px 15px 5px 50px;}
 .navbar-nav .open .dropdown-menu > li:first-child > a{padding:5px 15px 5px 50px;}
 .navbar-nav .open .dropdown-menu > li:last-child > a{padding:15px 15px 25px 50px;}
