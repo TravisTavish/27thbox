@@ -80,12 +80,21 @@ body {
     font-style: italic;
     font-size: 1.50em;
     font-weight: lighter;
+    text-decoration: underline;
+    margin: 10px 0;
+}
+
+.modal-text {
+    font-family: 'Open Sans'; 
+    font-size: 1.08em; 
+    line-height: 1.2; 
+    font-weight: lighter;
 }
 
 /* footer */
 
 #footer {
-    margin: 35px auto;
+    margin: 20px auto;
     padding: 5px;
 }
 
@@ -109,7 +118,7 @@ body {
 
 #policies {
     padding : 16px 10px;
-    border-left: 3px solid #aaa;
+    border-left: 2px solid #aaa;
 }
 
 .foot-text {
@@ -127,6 +136,11 @@ body {
 }
 
 #contact {
-    padding-top: 30px;
-    text-align: left;
+    padding-top: 28px;
+    text-align: right;
+}
+
+@media (max-width: 767px)
+    .inline {
+        display: inline;
 }
