@@ -94,9 +94,9 @@
                             <div class="tab-pane active" id="home">
                                 <div class="form-group">
                                     <form method="POST" action="/mail.php">
-                                        <input type="text" value="" placeholder="Full Name" class="form-control" required/>
-                                        <input type="email" value="" placeholder="E-mail" class="form-control" required/>
-                                        <textarea class="form-control" placeholder="Tell us what you think..." rows="3" required></textarea>
+                                        <input type="text" value="" placeholder="Full Name" class="form-control" name="name" required/>
+                                        <input type="text" value="" placeholder="Subject" class="form-control" name="subject" required/>
+                                        <textarea class="form-control" placeholder="Tell us what you think..." rows="3" name="message" required></textarea>
                                         
                                         <button class="btn btn-simple">Send!</button>
                                     </form>
