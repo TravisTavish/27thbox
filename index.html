@@ -4,6 +4,10 @@
         <title>Get 27thBox</title>
         
         <meta charset="utf-8" />
+        <meta name="description" content="27thBox is a gift and subscription service that gives you the good looks and great feeling with the items in the box we provide you" />
+        <meta name="keywords" content="27th, 27thbox, Subscription, Box, Gift, Gift box, Fashion Box, Monthly Subscription, Gift Packages"/>
+        
+        
         <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
         <meta name="viewport" content="width=device-width" />
         
@@ -18,6 +22,7 @@
         <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
         
+       
     </head>
     
     <body>
@@ -26,9 +31,9 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="navbar-collapse" id="navigation-example-2">
               <ul class="nav navbar-nav navbar-right">
-                <li> <a href="www.instagram.com/27thbox" target="_blank" class="btn btn-simple" style="color: #000;"><i class="fa fa-instagram"></i></a>  </li>
-                <li> <a href="www.facebook.com/27thbox" target="_blank" class="btn btn-simple" style="color: #000;"><i class="fa fa-facebook"></i></a>  </li>
-                <li> <a href="www.twitter.com/27thbox" target="_blank" class="btn btn-simple" style="color: #000;"><i class="fa fa-twitter"></i></a>   </li>
+                <li> <a href="https://instagram.com/27thbox" target="_blank" class="btn btn-simple" style="color: #000;"><i class="fa fa-instagram"></i></a>  </li> 
+                <li> <a href="https://facebook.com/27thbox" target="_blank" class="btn btn-simple" style="color: #000;"><i class="fa fa-facebook"></i></a>  </li>
+                <li> <a href="https://twitter.com/27thbox" target="_blank" class="btn btn-simple" style="color: #000;"><i class="fa fa-twitter"></i></a>   </li>
                </ul>
             </div><!-- /.navbar-collapse -->
           </div><!-- /.container-->
@@ -38,7 +43,7 @@
             <div class="row stretched">
                 <article class="col-sm-4">
                     <h1 id="heading">27thBox</h1>
-                    <p id="intro">We are  all about making you feel &amp; look good both on the inside &amp; outside appearance. On the 27th <a href="#" id="link-blink" data-toggle="popover" data-placement="right" title="About 27thBox" data-content="...of every month, once you have subscribed to our services, you receive a 27thBox package containing the essential items that you will need to keep you appearance game strong! We also have a gift package option that allows our subscribers and visitors get gifts for their loved once for an affordable fee.">...</a></p>
+                    <p id="intro">We are  all about making you feel &amp; look good both on the inside &amp; outside appearance. On the 27th <a href="#" id="link-blink" data-toggle="modal" data-target="#aboutModal">...</a></p>
                     
                     <button class="btn btn-simple" id="modal-btn" data-toggle="modal" data-target="#myModal">What Now?</button>
                 </article>
@@ -60,8 +65,8 @@
                     <p class="foot-text"><a href="https://drive.google.com/open?id=13mjKPjXQS6leOVIwZB8KWcVoC11Puu3tRtJl32YLSiI" class="foot-link">Privacy Policy</a></p>
                     <p class="foot-text"><a href="https://drive.google.com/open?id=1SxELpoozYXN2hdXBMwE7ejk3p9LEEYRwmNrFy4aC9Ag" class="foot-link">Terms and Conditions</a></p>
                 </div>
-                <div class="col-sm-4 col-sm-pull-2" id="contact">
-                    <p class="foot-text">info@27thbox.com  <span style="font-size: 1.45em; font-weight: bolder; color: #aaa;">//</span>  +233(0) 20 949 7199</p>
+                <div class="col-sm-4" id="contact">
+                    <p class="foot-text">[ <a href="mailto:info@27thbox.com" class="foot-text">info@27thbox.com</a> ] [  +233(0) 20 949 7199  ]</p>
                 </div>
             </div>
         </footer>
@@ -74,7 +79,7 @@
                     <h4 class="modal-title" id="myModalLabel">Note from 27thBox</h4>
                 </div>
                 <div class="modal-body">
-                    <p> 27thBox is almost completed and this is a black and white trial site to see how many people will be interested. We are working very hard to bring you the best service ever in the country. So we would like to hear from you by mail or subscribe to get notified immediately we commence shipping and delivery of 27thBox packages. Thank You!</p>
+                    <p class="modal-text"> 27thBox is almost completed and this is a black and white trial site to see how many people will be interested. We are working very hard to bring you the best service ever in the country. So we would like to hear from you by mail or subscribe to get notified immediately we commence shipping and delivery of 27thBox packages. Thank You!</p>
                 </div>
                 <div class="modal-footer">
                         <div class="nav-tabs-navigation">
@@ -88,10 +93,10 @@
                         <div id="my-tab-content" class="tab-content text-center">
                             <div class="tab-pane active" id="home">
                                 <div class="form-group">
-                                    <form method="POST" action="">
-                                        <input type="text" value="" placeholder="Full Name" class="form-control" />
-                                        <input type="text" value="" placeholder="E-mail" class="form-control" />
-                                        <textarea class="form-control" placeholder="Tell us what you think..." rows="3"></textarea>
+                                    <form method="POST" action="/mail.php">
+                                        <input type="text" value="" placeholder="Full Name" class="form-control" required/>
+                                        <input type="email" value="" placeholder="E-mail" class="form-control" required/>
+                                        <textarea class="form-control" placeholder="Tell us what you think..." rows="3" required></textarea>
                                         
                                         <button class="btn btn-simple">Send!</button>
                                     </form>
@@ -100,7 +105,7 @@
                             </div>
                             <div class="tab-pane" id="profile">
                                 <p>By giving us your e-mail, it shows your interest in 27thBox's gift services and we will notify you once we commence!</p>
-                                <form action="" method="POST">
+                                <form method="POST" action="">
                                     <input type="email" value="" placeholder="Your E-mail" class="form-control" />
                                     <button class="btn btn-simple">Subscribe!</button>
                                 </form>
@@ -110,11 +115,23 @@
             </div>
           </div>
         </div>
+        
+        <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog" aria-labelledby="#aboutModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title" id="myModalLabel">About 27thBox</h4>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-text" style="line-height: 1.5; margin: 10px 0;"> ...of every month, once you have subscribed to our services, you receive a 27thBox package containing the essential items that you will need to keep your appearance game strong! We also have a gift package option that allows our subscribers and visitors get gifts for their loved once for an affordable fee. So basically we are a gift packaging service looking forward to making you all look and feel good, <br> <center>Cheers!</center></p>
+                </div>
+            </div>
+          </div>
+        </div>
     </body>  
     
-    <script text="text/javascript">
-        gsdk.initPopovers();
-    </script>
+    
     <script type="text/javascript" src="assets/js/jquery.js"> </script>
     <script type="text/javascript" src="assets/js/bootstrap.js"> </script>
     <script type="text/javascript" src="assets/js/jquery.js"> </script>
